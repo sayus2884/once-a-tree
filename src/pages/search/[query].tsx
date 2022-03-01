@@ -23,8 +23,8 @@ const QueryResults: NextPage = () => {
       </div>
 
       <div className="grid gap-5">
-        {new Array(5).fill(0).map((data, i) => (
-          <Card {...sampleResult} key={i} />
+        {new Array(5).fill(sampleResult).map((product, i) => (
+          <Card {...product} key={i} />
         ))}
       </div>
     </div>

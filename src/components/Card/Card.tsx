@@ -22,7 +22,7 @@ const Card: React.FC<Props> = ({ className, ...props }) => {
         <p>{description}</p>
         <div className="flex justify-between items-center">
           <p>$ {price}</p>
-          <Heart size={30} />
+          <Heart size={30} weight="duotone" color="red" />
         </div>
       </div>
     </div>
