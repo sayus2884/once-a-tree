@@ -10,7 +10,7 @@ const Layout: React.FC<Props> = ({ children, className, ...props }) => {
   return (
     <div {...props}>
       <Nav />
-      <main className="pt-nav px-[10px]">{children}</main>
+      <main className="pt-nav">{children}</main>
       <Footer />
     </div>
   );
