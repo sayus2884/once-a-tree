@@ -40,22 +40,22 @@ const store = [
 
 const Footer: React.FC<Props> = ({ className, ...props }) => {
   return (
-    <footer className={`${className} bg-red-700 text-white`} {...props}>
+    <footer className={`${className} bg-ocean-500 text-white`} {...props}>
       <div className="px-[10px] py-10">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-5">
             <h2>JOIN OUR NEWSLETTER</h2>
             <Input label="Name" />
             <Input label="Email" />
-            <Button className="bg-red-800 w-full">Sign Me Up</Button>
+            <Button className="w-full">Sign Me Up</Button>
           </div>
 
           <div>
             <h2 className="mb-5">Categories</h2>
             <nav>
               <ul className="grid gap-6">
-                {categories.map(({ name, route }) => (
-                  <li>
+                {categories.map(({ name, route }, i) => (
+                  <li key={i}>
                     <a href={route}>{name}</a>
                   </li>
                 ))}
@@ -67,8 +67,8 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
             <h2 className="mb-5">Shopping</h2>
             <nav>
               <ul className="grid gap-6">
-                {shopping.map(({ name, route }) => (
-                  <li>
+                {shopping.map(({ name, route }, i) => (
+                  <li key={i}>
                     <a href={route}>{name}</a>
                   </li>
                 ))}
@@ -80,8 +80,8 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
             <h2 className="mb-5">Tips &amp; Tricks</h2>
             <nav>
               <ul className="grid gap-6">
-                {tips.map(({ name, route }) => (
-                  <li>
+                {tips.map(({ name, route }, i) => (
+                  <li key={i}>
                     <a href={route}>{name}</a>
                   </li>
                 ))}
@@ -93,8 +93,8 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
             <h2 className="mb-5">Once a Tree Furniture</h2>
             <nav>
               <ul className="grid gap-5">
-                {store.map(({ name, route }) => (
-                  <li>
+                {store.map(({ name, route }, i) => (
+                  <li key={i}>
                     <a href={route}>{name}</a>
                   </li>
                 ))}
@@ -104,7 +104,7 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
         </div>
       </div>
 
-      <div className="bg-red-800 px-[10px] py-5">COPYRIGHT &copy; ONCE A TREE FURNITURE</div>
+      <div className="bg-ocean-600 px-[10px] py-5">COPYRIGHT &copy; ONCE A TREE FURNITURE</div>
     </footer>
   );
 };

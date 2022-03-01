@@ -9,8 +9,11 @@ interface Props
 }
 
 const Button: React.FC<Props> = ({ children, className, ...props }) => {
+  // TODO: create switch for button colors
+  let buttonColor = "bg-ocean";
+
   return (
-    <button className={`${className} px-4 py-3`} {...props}>
+    <button className={`${className} ${buttonColor} px-4 py-3 `} {...props}>
       {children}
     </button>
   );

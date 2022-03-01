@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        ocean: "#415867",
+        "ocean-500": "#1E292F",
+        "ocean-600": "#1A2327",
+      },
       spacing: {
         nav: "64px",
       },
