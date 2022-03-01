@@ -49,8 +49,8 @@ const Item: NextPage = () => {
         </div>
 
         <div className="grid gap-3">
-          {sampleFurniture.options.map(({ name, priceUrl }) => (
-            <Button solid>
+          {sampleFurniture.options.map(({ name, priceUrl }, i) => (
+            <Button solid key={i}>
               <a href={priceUrl}>{name}</a>
             </Button>
           ))}
