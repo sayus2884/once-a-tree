@@ -8,8 +8,8 @@ interface Props {
 
 const Nav: React.FC<Props> = ({ className, ...props }) => {
   return (
-    <div className={`${className} fixed h-nav w-full bg-white`} {...props}>
-      <div className="flex items-center h-full px-[10px] justify-between border-b border-black/10">
+    <div className={`${className} fixed h-nav w-full z-50`} {...props}>
+      <div className="flex items-center h-full px-[10px] justify-between border-b border-black/10 bg-white">
         <div>
           <Image src="/logo.svg" height={36} width={36} />
         </div>

@@ -13,7 +13,7 @@ interface Props {
 const Card: React.FC<Props> = ({ className, ...props }) => {
   const { name, description, price, isLiked } = props;
   return (
-    <div className={`${className} border border-black/20 rounded`} {...props}>
+    <div className={`${className} border border-black/20 rounded bg-white shadow`} {...props}>
       <div className="relative h-[450px] w-full ">
         <Image src="/images/chair_sample-black.jpg" layout="fill" objectFit="contain" />
       </div>
