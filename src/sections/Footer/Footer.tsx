@@ -47,7 +47,9 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
             <h2>JOIN OUR NEWSLETTER</h2>
             <Input label="Name" />
             <Input label="Email" />
-            <Button className="w-full">Sign Me Up</Button>
+            <Button className="w-full" solid>
+              Sign Me Up
+            </Button>
           </div>
 
           <div>
