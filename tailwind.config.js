@@ -5,7 +5,11 @@ module.exports = {
     "./src/sections/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        nav: "64px",
+      },
+    },
   },
   plugins: [],
 };
