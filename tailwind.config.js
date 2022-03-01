@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -5,6 +7,9 @@ module.exports = {
     "./src/sections/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      montserrat: ['"Montserrat"'],
+    },
     extend: {
       colors: {
         ocean: "#415867",
@@ -16,5 +21,13 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase, addComponents, addUtilities, theme }) {
+      addBase({
+        h2: {
+          fontSize: theme("fontSize.2xl"),
+        },
+      });
+    }),
+  ],
 };
