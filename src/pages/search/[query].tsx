@@ -17,7 +17,7 @@ const QueryResults: NextPage = () => {
   const { query } = router.query;
 
   return (
-    <div className="page-px pt-5 pb-10">
+    <div className="page-px page-py">
       <CardList>
         {new Array(5).fill(sampleResult).map((product, i) => (
           <Card {...product} key={i} />

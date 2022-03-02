@@ -7,6 +7,10 @@
     @apply px-[10px] md:px-[45px] lg:px-[70px];
   }
 
+  .page-py {
+    @apply pt-5 pb-24 lg:pt-10 lg:pb-52;
+  }
+
   .max-w-content {
     @apply lg:max-w-[1400px] m-auto;
   }

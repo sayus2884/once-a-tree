@@ -14,7 +14,7 @@ const Item: NextPage = () => {
   const { name, price } = sampleFurniture;
 
   return (
-    <section className="page-px pt-5 pb-24 lg:pt-10 lg:pb-52">
+    <section className="page-px page-py">
       <div className="grid lg:gap-x-24 lg:grid-cols-2">
         <div className="grid gap-10">
           <h2 className="title lg:hidden">{name}</h2>
