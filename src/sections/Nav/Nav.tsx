@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { List } from "phosphor-react";
+import { Heart, List, User } from "phosphor-react";
 
 interface Props {
   className?: string;
@@ -13,8 +13,16 @@ const Nav: React.FC<Props> = ({ className, ...props }) => {
         <div>
           <Image src="/logo.svg" height={36} width={36} />
         </div>
-        <div className="md-hidden">
-          <List size={24} />
+
+        <div className="flex gap-5">
+          <div className="flex">
+            <Heart size={24} />
+            <span>(0)</span>
+          </div>
+          <User size={24} />
+          <div className="md-hidden">
+            <List size={24} />
+          </div>
         </div>
       </div>
     </div>
