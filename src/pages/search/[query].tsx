@@ -17,11 +17,6 @@ const QueryResults: NextPage = () => {
 
   return (
     <div className="px-[10px] pt-5 pb-10">
-      <div className="pb-8">
-        <Input defaultValue={query} />
-        <p className="mt-2">277 results for {query}</p>
-      </div>
-
       <div className="grid gap-5">
         {new Array(5).fill(sampleResult).map((product, i) => (
           <Card {...product} key={i} />
