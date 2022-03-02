@@ -41,7 +41,7 @@ const store = [
 const Footer: React.FC<Props> = ({ className, ...props }) => {
   return (
     <footer className={`${className} bg-ocean-500 text-white`} {...props}>
-      <div className="px-[10px] py-10">
+      <div className="page-px py-10">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-5">
             <h2 className="text-xl tracking-wide">JOIN OUR NEWSLETTER</h2>

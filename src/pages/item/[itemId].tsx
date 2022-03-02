@@ -14,7 +14,7 @@ const Item: NextPage = () => {
   const { name, price } = sampleFurniture;
 
   return (
-    <section className="px-[10px] pt-5 pb-10">
+    <section className="page-px pt-5 pb-10">
       <div className="grid gap-8">
         <h2 className="title">{name}</h2>
         <div className="relative w-full min-h-[450px]">

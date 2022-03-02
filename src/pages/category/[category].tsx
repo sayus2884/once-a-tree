@@ -16,7 +16,7 @@ const Category: NextPage = () => {
   const { category } = router.query;
 
   return (
-    <div className="px-[10px] pt-5 pb-10">
+    <div className="page-px pt-5 pb-10">
       <div className="pb-8 grid gap-5">
         <h2 className="place-self-center">{category}</h2>
         <p>

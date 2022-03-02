@@ -16,7 +16,7 @@ const QueryResults: NextPage = () => {
   const { query } = router.query;
 
   return (
-    <div className="px-[10px] pt-5 pb-10">
+    <div className="page-px pt-5 pb-10">
       <div className="grid gap-5">
         {new Array(5).fill(sampleResult).map((product, i) => (
           <Card {...product} key={i} />

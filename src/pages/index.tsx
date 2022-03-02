@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <HeaderOverlay className="text-white">
-        <div className="flex flex-col h-[500px] md:h-screen items-center justify-center px-[10px]">
+        <div className="flex flex-col h-[500px] md:h-screen items-center justify-center page-px">
           <div className="relative h-[50px] w-[50px]">
             <Image src="/logo.svg" layout="fill" />
           </div>

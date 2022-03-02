@@ -13,7 +13,7 @@ const Layout: React.FC<Props> = ({ children, className, ...props }) => {
       <Nav />
 
       <main className="pt-nav min-w-[380px]">
-        <Searchbar className="py-5 px-[10px]" query={"query context"} />
+        <Searchbar className="py-5 page-px" query={"query context"} />
 
         {children}
       </main>
