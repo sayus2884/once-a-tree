@@ -41,10 +41,13 @@ const store = [
 const Footer: React.FC<Props> = ({ className, ...props }) => {
   return (
     <footer className={`${className} bg-ocean-500 text-white`} {...props}>
-      <div className="page-px py-10">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-5">
+      <div className="page-px py-10 lg:py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-20 md:auto-cols-[250px]">
+          <div className="flex flex-col gap-5 md:col-span-2 lg:row-span-2">
             <h2 className="text-xl tracking-wide">JOIN OUR NEWSLETTER</h2>
+            <p className="font-light">
+              Be the first to hear about new arrivals, designer collections and exclusive offers.
+            </p>
             <Input label="Name" />
             <Input label="Email" />
             <Button className="w-full" solid>
@@ -52,7 +55,7 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
             </Button>
           </div>
 
-          <div>
+          <div className="md:row-span-2">
             <h2 className="mb-5 text-xl tracking-wide">Categories</h2>
             <nav>
               <ul className="grid gap-6 font-light">
@@ -91,7 +94,7 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
             </nav>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <h2 className="mb-5 text-xl tracking-wide">Once a Tree Furniture</h2>
             <nav>
               <ul className="grid gap-6 font-light">
@@ -106,7 +109,7 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
         </div>
       </div>
 
-      <div className="bg-ocean-600 px-[10px] py-5 text-sm tracking-wider font-light">
+      <div className="bg-ocean-600 page-px py-5 text-sm tracking-wider font-light lg:text-center">
         COPYRIGHT &copy; ONCE A TREE FURNITURE
       </div>
     </footer>
