@@ -41,7 +41,7 @@ const store = [
 const Footer: React.FC<Props> = ({ className, ...props }) => {
   return (
     <footer className={`${className} bg-ocean-500 text-white`} {...props}>
-      <div className="page-px py-10 lg:py-20">
+      <div className="page-px py-10 lg:py-20 max-w-content">
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-20 md:auto-cols-[250px]">
           <div className="flex flex-col gap-5 md:col-span-2 lg:row-span-2">
             <h2 className="text-xl tracking-wide">JOIN OUR NEWSLETTER</h2>
@@ -81,7 +81,7 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
             </nav>
           </div>
 
-          <div>
+          <div className="col-span-2">
             <h2 className="mb-5 text-xl tracking-wide">Tips &amp; Tricks</h2>
             <nav>
               <ul className="grid gap-6 font-light">

@@ -4,7 +4,11 @@
 
 @layer components {
   .page-px {
-    @apply px-[10px] md:px-[45px] lg:px-[55px];
+    @apply px-[10px] md:px-[45px] lg:px-[70px];
+  }
+
+  .max-w-content {
+    @apply lg:max-w-[1400px] m-auto;
   }
 }
 

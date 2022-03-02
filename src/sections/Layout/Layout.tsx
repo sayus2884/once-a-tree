@@ -19,7 +19,7 @@ const Layout: React.FC<Props> = ({ children, className, ...props }) => {
 
         <Searchbar className="py-5 page-px" query={"query context"} />
 
-        {children}
+        <div className="max-w-content">{children}</div>
       </main>
 
       <Footer />
