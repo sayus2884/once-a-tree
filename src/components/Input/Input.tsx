@@ -8,9 +8,9 @@ interface Props
 
 const Input: React.FC<Props> = ({ className, label, ...props }) => {
   return (
-    <label className="flex flex-col gap-3 rounded border border-black/20">
+    <label className="flex flex-col gap-3 rounded font-light tracking-wide">
       {label}
-      <input className={`${className} ring-none p-2`} {...props} />
+      <input className={`${className} ring-none p-2 border border-black/20`} {...props} />
     </label>
   );
 };
