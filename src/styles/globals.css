@@ -10,7 +10,7 @@
 
 @layer components {
   .page-px {
-    @apply px-[10px] md:px-[45px] lg:px-[70px];
+    @apply px-[10px] sm:px-[25px] md:px-[45px] lg:px-[70px];
   }
 
   .page-py {
