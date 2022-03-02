@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    @apply leading-relaxed md:leading-loose;
+  }
+}
+
 @layer components {
   .page-px {
     @apply px-[10px] md:px-[45px] lg:px-[70px];
