@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import React from "react";
 
 import Card from "../../components/Card/Card";
+import CardList from "../../components/CardList/CardList";
 
 const sampleResult = {
   name: "COOPER SWIVEL CHAIR (OPTIONS)",
@@ -16,20 +17,20 @@ const Category: NextPage = () => {
   const { category } = router.query;
 
   return (
-    <div className="page-px pt-5 pb-10">
+    <div className="page-px pt-5 pb-24 lg:pt-10 lg:pb-52">
       <div className="pb-8 grid gap-5">
-        <h2 className="place-self-center">{category}</h2>
-        <p>
+        <h2 className="title place-self-center">{category}</h2>
+        <p className="max-w-[600px] place-self-center mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua.
         </p>
       </div>
 
-      <div className="grid gap-5">
+      <CardList>
         {new Array(5).fill(sampleResult).map((product, i) => (
           <Card {...product} key={i} />
         ))}
-      </div>
+      </CardList>
     </div>
   );
 };

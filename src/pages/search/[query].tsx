@@ -4,6 +4,7 @@ import React from "react";
 
 import Input from "../../components/Input/Input";
 import Card from "../../components/Card/Card";
+import CardList from "../../components/CardList/CardList";
 
 const sampleResult = {
   name: "COOPER SWIVEL CHAIR (OPTIONS)",
@@ -17,11 +18,11 @@ const QueryResults: NextPage = () => {
 
   return (
     <div className="page-px pt-5 pb-10">
-      <div className="grid gap-5">
+      <CardList>
         {new Array(5).fill(sampleResult).map((product, i) => (
           <Card {...product} key={i} />
         ))}
-      </div>
+      </CardList>
     </div>
   );
 };
