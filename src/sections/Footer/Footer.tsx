@@ -109,8 +109,8 @@ const Footer: React.FC<Props> = ({ className, ...props }) => {
         </div>
       </div>
 
-      <div className="bg-ocean-600 page-px py-5 text-sm tracking-wider font-light lg:text-center">
-        COPYRIGHT &copy; ONCE A TREE FURNITURE
+      <div className="bg-ocean-600 page-px py-5 text-sm tracking-wider font-light lg:text-center uppercase">
+        Copyright &copy; Once A Tree Furniture
       </div>
     </footer>
   );
