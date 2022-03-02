@@ -2,6 +2,7 @@ type PriceOption = {
   name: string;
   price: string;
   priceUrl: string;
+  imageUrl: string;
 };
 
 export type Furniture = {
@@ -23,17 +24,29 @@ export const sampleFurniture: Furniture = {
   ],
   price: "1650.00",
   options: [
-    { name: "Copper Swivel Chair", price: "1650.00", priceUrl: "https://example.com" },
-    { name: "Copper Swivel Chair With Skirt", price: "2850.00", priceUrl: "https://example.com" },
+    {
+      name: "Copper Swivel Chair",
+      price: "1650.00",
+      priceUrl: "https://example.com",
+      imageUrl: "/images/chair_sample-black.jpg",
+    },
+    {
+      name: "Copper Swivel Chair With Skirt",
+      price: "2850.00",
+      priceUrl: "https://example.com",
+      imageUrl: "/images/chair_sample-grey.jpg",
+    },
     {
       name: "Copper Tufted Channel Swivel Chair",
       price: "4900.00",
       priceUrl: "https://example.com",
+      imageUrl: "/images/chair_sample-white.jpg",
     },
     {
       name: "Copper Tufted Channel Swivel Chair With Skirt",
       price: "5500.00",
       priceUrl: "https://example.com",
+      imageUrl: "/images/chair_sample-white.jpg",
     },
   ],
 };

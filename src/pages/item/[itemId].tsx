@@ -20,7 +20,21 @@ const Item: NextPage = () => {
         <div className="relative w-full min-h-[450px]">
           <Image src="/images/chair_sample-black.jpg" layout="fill" objectFit="contain" />
         </div>
-        <div className="text-red-500">add swiper here</div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+          {sampleFurniture.options.map((option, i) => (
+            <button
+              className="relative h-[150px] md:max-w-[150px] border border-black/20 shadow hover:shadow-md rounded-sm"
+              key={i}>
+              <Image
+                className="hover:opacity-50"
+                src={option.imageUrl}
+                layout="fill"
+                objectFit="contain"
+              />
+            </button>
+          ))}
+        </div>
 
         <div className="grid gap-2 text-sm">
           <button className="hidden md:flex gap-1 items-center">
