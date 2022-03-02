@@ -51,6 +51,13 @@ export const sampleFurniture: Furniture = {
   ],
 };
 
+export const mainRoutes = [
+  { name: "Custom Furniture", route: "/" },
+  { name: "Design Tips", route: "/" },
+  { name: "Care Instructions", route: "/" },
+  { name: "Contact Us", route: "/" },
+];
+
 export const categories = [
   { name: "Sale", route: "/" },
   { name: "Living Spaces", route: "/" },
