@@ -8,7 +8,7 @@ interface Props {
 
 const Layout: React.FC<Props> = ({ children, className, ...props }) => {
   return (
-    <div className="font-montserrat" {...props}>
+    <div className="font-montserrat text-gray-800" {...props}>
       <Nav />
       <main className="pt-nav">{children}</main>
       <Footer />

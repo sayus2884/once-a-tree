@@ -24,10 +24,23 @@ module.exports = {
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities, theme }) {
       addBase({
-        h2: {
-          fontSize: theme("fontSize.2xl"),
+        h1: {
+          textTransform: "uppercase",
         },
-      });
+        h2: {
+          textTransform: "uppercase",
+        },
+        h3: {
+          textTransform: "uppercase",
+        },
+      }),
+        addComponents({
+          ".title": {
+            fontSize: theme("fontSize.4xl"),
+            fontWeight: theme("fontWeight.bold"),
+            lineHeight: "2.75rem",
+          },
+        });
     }),
   ],
 };
