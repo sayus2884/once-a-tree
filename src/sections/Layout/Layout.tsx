@@ -10,7 +10,7 @@ const Layout: React.FC<Props> = ({ children, className, ...props }) => {
   return (
     <div className="font-montserrat text-gray-800" {...props}>
       <Nav />
-      <main className="pt-nav">{children}</main>
+      <main className="pt-nav min-w-[380px]">{children}</main>
       <Footer />
     </div>
   );
