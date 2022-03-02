@@ -4,7 +4,7 @@
 
 @layer components {
   .page-px {
-    @apply px-[10px] md:px-[45px];
+    @apply px-[10px] md:px-[45px] lg:px-[55px];
   }
 }
 

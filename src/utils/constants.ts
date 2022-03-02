@@ -50,3 +50,15 @@ export const sampleFurniture: Furniture = {
     },
   ],
 };
+
+export const categories = [
+  { name: "Sale", route: "/" },
+  { name: "Living Spaces", route: "/" },
+  { name: "Dining", route: "/" },
+  { name: "Work Space", route: "/" },
+  { name: "Bedroom", route: "/" },
+  { name: "Lighting", route: "/" },
+  { name: "Accessories", route: "/" },
+  { name: "Rugs", route: "/" },
+  { name: "Outdoor", route: "/" },
+];
