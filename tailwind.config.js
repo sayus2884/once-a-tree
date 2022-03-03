@@ -36,9 +36,9 @@ module.exports = {
       }),
         addComponents({
           ".title": {
-            fontSize: theme("fontSize.4xl"),
+            fontSize: theme("fontSize.5xl"),
             fontWeight: theme("fontWeight.bold"),
-            lineHeight: "2.75rem",
+            lineHeight: "3.25rem",
           },
         });
     }),
