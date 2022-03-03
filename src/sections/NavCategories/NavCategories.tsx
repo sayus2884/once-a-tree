@@ -13,7 +13,7 @@ const NavCategories: React.FC<Props> = ({ className, ...props }) => {
         <ul className="flex flex-wrap gap-y-5 gap-x-10">
           {categories.map(({ name, route }) => (
             <li className="first:text-red-500 uppercase tracking-widest font-light">
-              <a href={route}>{name}</a>
+              <a href={`/category/${route}`}>{name}</a>
             </li>
           ))}
         </ul>

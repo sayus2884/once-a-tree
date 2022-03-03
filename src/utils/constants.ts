@@ -52,22 +52,22 @@ export const sampleFurniture: Furniture = {
 };
 
 export const mainRoutes = [
-  { name: "Custom Furniture", route: "/" },
-  { name: "Design Tips", route: "/" },
-  { name: "Care Instructions", route: "/" },
+  { name: "Custom Furniture", route: "/landing" },
+  { name: "Design Tips", route: "/blog/feed" },
+  { name: "Care Instructions", route: "/how-to-care" },
   { name: "Contact Us", route: "/" },
 ];
 
 export const categories = [
-  { name: "Sale", route: "/" },
-  { name: "Living Spaces", route: "/" },
-  { name: "Dining", route: "/" },
-  { name: "Work Space", route: "/" },
-  { name: "Bedroom", route: "/" },
-  { name: "Lighting", route: "/" },
-  { name: "Accessories", route: "/" },
-  { name: "Rugs", route: "/" },
-  { name: "Outdoor", route: "/" },
+  { name: "Sale", route: "/sale" },
+  { name: "Living Spaces", route: "/living spaces" },
+  { name: "Dining", route: "/dining" },
+  { name: "Work Space", route: "/work space" },
+  { name: "Bedroom", route: "/bedroom" },
+  { name: "Lighting", route: "/lighting" },
+  { name: "Accessories", route: "/accesories" },
+  { name: "Rugs", route: "/rugs" },
+  { name: "Outdoor", route: "/outdoor" },
 ];
 
 export const careInstructions = [
