@@ -16,8 +16,8 @@ const Nav: React.FC<Props> = ({ className, ...props }) => {
           <Image src="/logo.svg" height={36} width={36} />
           <nav className="hidden lg:grid items-center">
             <ul className="flex gap-16">
-              {mainRoutes.map(({ name, route }) => (
-                <li>
+              {mainRoutes.map(({ name, route }, i) => (
+                <li key={i}>
                   <a className="uppercase font-light tracking-widest" href={route}>
                     {name}
                   </a>
