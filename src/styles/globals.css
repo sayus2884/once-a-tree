@@ -36,20 +36,33 @@
   }
 }
 
+.color-picker {
+  color: #415867;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
+  background: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+*::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: none;
 }
 
-* {
-  box-sizing: border-box;
+*::-webkit-scrollbar-track {
+  padding: 10px;
+  background: #1a2327;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(66, 85, 97, 0.4);
+  border-radius: 9999px;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background: rgb(66, 85, 97, 0.7);
 }
