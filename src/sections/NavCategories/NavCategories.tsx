@@ -1,6 +1,7 @@
 import React from "react";
 
 import { categories } from "../../utils/constants";
+import UseScrollObserver from "./../../hooks/use-scroll-observer";
 
 interface Props {
   className?: string;
@@ -8,7 +9,9 @@ interface Props {
 
 const NavCategories: React.FC<Props> = ({ className, ...props }) => {
   return (
-    <div className="hidden md:block page-px py-5 border-b border-black/20" {...props}>
+    <div
+      className={`${className} hidden md:block page-px py-5 border-b border-black/20`}
+      {...props}>
       <nav>
         <ul className="flex flex-wrap gap-y-5 gap-x-10">
           {categories.map(({ name, route }, i) => (

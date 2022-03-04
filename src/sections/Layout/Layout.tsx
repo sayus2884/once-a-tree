@@ -14,9 +14,7 @@ const Layout: React.FC<Props> = ({ children, className, ...props }) => {
     <div className="font-montserrat text-gray-800" {...props}>
       <Nav />
 
-      <main className="pt-nav min-w-[380px]">
-        <NavCategories />
-
+      <main className="min-w-[380px]">
         <Searchbar className="py-5 page-px" query={"query context"} />
 
         <div>{children}</div>

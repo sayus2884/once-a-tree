@@ -4,13 +4,18 @@ import { Heart, List, User } from "phosphor-react";
 
 import { mainRoutes } from "../../utils/constants";
 
+import NavCategories from "../NavCategories/NavCategories";
+import useScrollObserver from "../../hooks/use-scroll-observer";
+
 interface Props {
   className?: string;
 }
 
 const Nav: React.FC<Props> = ({ className, ...props }) => {
+  const { isInPosition } = useScrollObserver(100);
+
   return (
-    <div className={`${className} fixed h-nav w-full z-50`} {...props}>
+    <div className={`${className} ${!isInPosition && "fixed"} h-nav w-full z-50`} {...props}>
       <div className="flex items-center h-full page-px justify-between border-b border-black/10 bg-white">
         <div className="flex gap-16">
           <Image src="/logo.svg" height={36} width={36} />
@@ -38,6 +43,8 @@ const Nav: React.FC<Props> = ({ className, ...props }) => {
           </div>
         </div>
       </div>
+
+      <NavCategories className="bg-white" />
     </div>
   );
 };
