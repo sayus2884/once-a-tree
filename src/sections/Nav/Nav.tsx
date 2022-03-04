@@ -7,17 +7,35 @@ import { mainRoutes } from "../../utils/constants";
 
 import NavCategories from "../NavCategories/NavCategories";
 import useScrollObserver from "../../hooks/use-scroll-observer";
+import { useRouter } from "next/router";
 
 interface Props {
   className?: string;
 }
 
+const animatableRoutes = ["/"];
+
 const Nav: React.FC<Props> = ({ className, ...props }) => {
   const { isInPosition } = useScrollObserver(150);
+  const router = useRouter();
+  const { asPath } = router;
+
+  console.log(asPath);
+
+  const animateOnRoute = (route: string) => {
+    if (animatableRoutes.includes(route)) {
+      return `text-white ${!isInPosition ? "bg-white text-black" : "font-bold"}`;
+    }
+
+    return "bg-white";
+  };
 
   return (
-    <div className={`${className} ${!isInPosition && "fixed"} w-full z-50`} {...props}>
-      <div className="flex items-center h-nav page-px justify-between border-b border-black/10 bg-white">
+    <div className={`${className}  fixed w-full z-50`} {...props}>
+      <div
+        className={`flex items-center h-nav page-px justify-between border-b border-black/10 ${animateOnRoute(
+          asPath,
+        )} transition ease-in duration-200`}>
         <div className="flex gap-16">
           <Link href="/">
             <div className="relative h-[36px] w-[36px] cursor-pointer">
@@ -28,7 +46,7 @@ const Nav: React.FC<Props> = ({ className, ...props }) => {
             <ul className="flex gap-16">
               {mainRoutes.map(({ name, route }, i) => (
                 <li key={i}>
-                  <a className="uppercase font-light tracking-widest" href={route}>
+                  <a className="uppercase tracking-widest hover:opacity-70" href={route}>
                     {name}
                   </a>
                 </li>
@@ -48,7 +66,7 @@ const Nav: React.FC<Props> = ({ className, ...props }) => {
           </div>
         </div>
       </div>
-      <NavCategories className="bg-white" />
+      <NavCategories className={`${animateOnRoute(asPath)} transition ease-in duration-200`} />
     </div>
   );
 };

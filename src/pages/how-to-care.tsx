@@ -48,8 +48,8 @@ const HowToCare: NextPage = () => {
           .
         </p>
 
-        {careInstructions.map(({ type, todos }) => (
-          <div className={type}>
+        {careInstructions.map(({ type, todos }, i) => (
+          <div className={type} key={i}>
             <h3 className="text-2xl font-bold mb-3">{type}</h3>
             <ul className="list-disc ml-5">
               {todos.map((todo) => (

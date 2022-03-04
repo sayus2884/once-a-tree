@@ -15,7 +15,7 @@
   }
 
   .page-py {
-    @apply pt-5 pb-24 lg:pt-10 lg:pb-52;
+    @apply pt-20 pb-24 lg:pt-48 lg:pb-52;
   }
 
   .max-w-content {

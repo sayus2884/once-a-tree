@@ -10,8 +10,7 @@ const Home: NextPage = () => {
       <HeaderOverlay className="text-white h-screen">
         <div className="flex flex-col h-[500px] md:h-screen items-center justify-center page-px gap-8">
           <div className="flex flex-col w-full lg:max-w-[600px]">
-            <p className="font-light">Search your furniture</p>
-            <Searchbar className="" />
+            <Searchbar label="Find your furniture" />
           </div>
         </div>
       </HeaderOverlay>

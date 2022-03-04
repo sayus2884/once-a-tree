@@ -12,7 +12,7 @@ const PageName: NextPage = () => {
             <Image src="/images/customize.jpg" layout="fill" objectFit="cover" />
           </div>
 
-          <div className="flex flex-col gap-8 sm:gap-12 bg-ocean-500 text-white page-px py-10 sm:py-20 ltr">
+          <div className="flex flex-col gap-8 sm:gap-12 bg-ocean-500 text-white page-px py-10 sm:py-20 lg:page-py ltr">
             <div>
               <h2 className="title mb-3">To Each Their Own</h2>
               <p className="font-light max-w-[370px]">

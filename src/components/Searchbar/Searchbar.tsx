@@ -5,12 +5,13 @@ interface Props {
   className?: string;
   query?: string;
   showResult?: boolean;
+  label?: string;
 }
 
-const Searchbar: React.FC<Props> = ({ className, query, showResult, ...props }) => {
+const Searchbar: React.FC<Props> = ({ className, query, showResult, label, ...props }) => {
   return (
     <div className={`${className}`}>
-      <Input defaultValue={query} />
+      <Input defaultValue={query} label={label} />
 
       {showResult && <p className="mt-2">277 results for {query}</p>}
     </div>
