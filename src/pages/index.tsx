@@ -9,12 +9,8 @@ const Home: NextPage = () => {
     <div>
       <HeaderOverlay className="text-white h-screen">
         <div className="flex flex-col h-[500px] md:h-screen items-center justify-center page-px gap-8">
-          <div className="relative h-[300px] w-[300px]">
-            <Image src="/logo.svg" layout="fill" />
-          </div>
-
           <div className="flex flex-col w-full lg:max-w-[600px]">
-            <p>This is a test</p>
+            <p className="font-light">Search your furniture</p>
             <Searchbar className="" />
           </div>
         </div>

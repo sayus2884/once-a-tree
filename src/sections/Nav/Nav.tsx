@@ -13,11 +13,11 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({ className, ...props }) => {
-  const { isInPosition } = useScrollObserver(100);
+  const { isInPosition } = useScrollObserver(150);
 
   return (
-    <div className={`${className} ${!isInPosition && "fixed"} h-nav w-full z-50`} {...props}>
-      <div className="flex items-center h-full page-px justify-between border-b border-black/10 bg-white">
+    <div className={`${className} ${!isInPosition && "fixed"} w-full z-50`} {...props}>
+      <div className="flex items-center h-nav page-px justify-between border-b border-black/10 bg-white">
         <div className="flex gap-16">
           <Link href="/">
             <div className="relative h-[36px] w-[36px] cursor-pointer">
@@ -48,7 +48,6 @@ const Nav: React.FC<Props> = ({ className, ...props }) => {
           </div>
         </div>
       </div>
-
       <NavCategories className="bg-white" />
     </div>
   );

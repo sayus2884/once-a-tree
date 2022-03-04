@@ -15,8 +15,6 @@ const Layout: React.FC<Props> = ({ children, className, ...props }) => {
       <Nav />
 
       <main className="min-w-[380px]">
-        <Searchbar className="py-5 page-px" query={"query context"} />
-
         <div>{children}</div>
       </main>
 
