@@ -5,12 +5,7 @@ import React from "react";
 import Card from "../../components/Card/Card";
 import CardList from "../../components/CardList/CardList";
 
-const sampleResult = {
-  name: "COOPER SWIVEL CHAIR (OPTIONS)",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  price: 1650.0,
-};
+import { sampleFurniture } from "../../utils/constants";
 
 const Category: NextPage = () => {
   const router = useRouter();
@@ -27,7 +22,7 @@ const Category: NextPage = () => {
       </div>
 
       <CardList>
-        {new Array(5).fill(sampleResult).map((product, i) => (
+        {new Array(5).fill(sampleFurniture).map((product, i) => (
           <Card {...product} key={i} />
         ))}
       </CardList>
