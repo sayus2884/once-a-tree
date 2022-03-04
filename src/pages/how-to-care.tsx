@@ -3,7 +3,11 @@ import Link from "next/link";
 import React from "react";
 import { careInstructions } from "../utils/constants";
 
+import UseScrollObserver from "../hooks/use-scroll-observer";
+
 const HowToCare: NextPage = () => {
+  const { scrollTo } = UseScrollObserver();
+
   return (
     <section className="page-px page-py">
       <div className="grid gap-8 max-w-[1000px]">
@@ -18,26 +22,34 @@ const HowToCare: NextPage = () => {
         <p>
           Continue reading on how to take care for the different kinds of materials you will find in
           our catalogue:{" "}
-          <a className="underline underline-offset-1 hover:opacity-80" href="#wood">
+          <a
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            onClick={() => scrollTo("wood")}>
             Wood
           </a>
           ,{" "}
-          <a className="underline underline-offset-1 hover:opacity-80" href="#upholstery">
+          <a
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            onClick={() => scrollTo("upholstery")}>
             Upholstery
           </a>
           ,{" "}
-          <a className="underline underline-offset-1 hover:opacity-80" href="#fabric">
+          <a
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            onClick={() => scrollTo("fabric")}>
             Fabric
           </a>
           , and{" "}
-          <a className="underline underline-offset-1 hover:opacity-80" href="#leather">
+          <a
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            onClick={() => scrollTo("leather")}>
             Leather
           </a>
           .
         </p>
 
         {careInstructions.map(({ type, todos }) => (
-          <div id={type}>
+          <div className={type}>
             <h3 className="text-2xl font-bold mb-3">{type}</h3>
             <ul className="list-disc ml-5">
               {todos.map((todo) => (
