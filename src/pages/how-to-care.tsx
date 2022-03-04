@@ -23,25 +23,25 @@ const HowToCare: NextPage = () => {
           Continue reading on how to take care for the different kinds of materials you will find in
           our catalogue:{" "}
           <a
-            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80 cursor-pointer"
             onClick={() => scrollTo("wood")}>
             Wood
           </a>
           ,{" "}
           <a
-            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80 cursor-pointer"
             onClick={() => scrollTo("upholstery")}>
             Upholstery
           </a>
           ,{" "}
           <a
-            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80 cursor-pointer"
             onClick={() => scrollTo("fabric")}>
             Fabric
           </a>
           , and{" "}
           <a
-            className="underline underline-offset-1 cursor:pointer hover:opacity-80"
+            className="underline underline-offset-1 cursor:pointer hover:opacity-80 cursor-pointer"
             onClick={() => scrollTo("leather")}>
             Leather
           </a>
