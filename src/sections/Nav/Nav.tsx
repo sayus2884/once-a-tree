@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Heart, List, User } from "phosphor-react";
 
 import { mainRoutes } from "../../utils/constants";
@@ -18,7 +19,11 @@ const Nav: React.FC<Props> = ({ className, ...props }) => {
     <div className={`${className} ${!isInPosition && "fixed"} h-nav w-full z-50`} {...props}>
       <div className="flex items-center h-full page-px justify-between border-b border-black/10 bg-white">
         <div className="flex gap-16">
-          <Image src="/logo.svg" height={36} width={36} />
+          <Link href="/">
+            <div className="relative h-[36px] w-[36px] cursor-pointer">
+              <Image src="/logo.svg" layout="fill" />
+            </div>
+          </Link>
           <nav className="hidden lg:grid items-center">
             <ul className="flex gap-16">
               {mainRoutes.map(({ name, route }, i) => (
